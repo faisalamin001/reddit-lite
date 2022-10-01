@@ -1,0 +1,30 @@
+.subreddits {
+  width: 18%;
+  max-height: 300px;
+  background-color: #1f1e1e;
+  grid-column: 12 / 15;
+  text-align: start;
+  position: fixed;
+  right: 120px;
+  top: 120px;
+  padding-left: 20px;
+}
+.subreddits > p {
+  cursor: pointer;
+}
+@media screen and (max-width: 820px) {
+  .subreddits {
+    display: none;
+  }
+}
+.subreddit-list-item {
+  color: white;
+}
+.subreddit-list-item > a {
+  color: white;
+  text-decoration: none;
+}
+.subreddit-list-item > a:hover {
+  color: white;
+  text-decoration: underline;
+}

@@ -1,0 +1,135 @@
+.post {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(26, 24, 24);
+  margin-top: 10px;
+  color: rgb(192, 188, 188);
+  grid-column: 3 / 11;
+  display: grid;
+  grid-template-columns: 0.5fr 6fr 0.5fr;
+  border-radius: 4px;
+  gap: 1rem;
+}
+.post:hover {
+  margin-left: 10px;
+  transition: all 200ms ease-out;
+}
+.post-author-title {
+  grid-column: 2;
+  text-align: left;
+  grid-row: 1;
+  margin-bottom: 20px;
+}
+
+.post-side {
+  background-color: black;
+  z-index: 2;
+  color: rgb(206, 201, 201);
+  grid-row: 1/4;
+  padding: 5px;
+}
+
+.post-side-elements {
+  margin-top: 10px;
+}
+.post-text {
+  padding: 20px;
+  grid-column: 2;
+  text-align: left;
+  margin-top: -50px;
+}
+.post-footer {
+  grid-column: 2;
+  display: flex;
+}
+.comment-icon {
+  margin-left: 2px;
+
+  align-self: center;
+}
+.post-comment-number {
+  margin-left: 10px;
+  align-self: center;
+}
+.up {
+  color: rgb(195, 192, 192);
+}
+.posts-list {
+  grid-column: 3/11;
+}
+
+@media screen and (max-width: 820px) {
+  .post {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-top: 50px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 9fr 0.5fr;
+    gap: 1rem;
+  }
+  .posts-list {
+    margin: auto;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .post-author-title {
+    grid-column: 2;
+    text-align: left;
+    grid-row: 1;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  .post-side-elements {
+    margin-top: 10px;
+  }
+  .post-text {
+    width: 100%;
+    grid-column: 2;
+    text-align: left;
+    margin-top: -50px;
+  }
+  .post-footer {
+    grid-column: 2;
+    display: flex;
+  }
+  .comment-icon {
+    margin-left: 2px;
+
+    align-self: center;
+  }
+  .post-comment-number {
+    margin-left: 10px;
+    align-self: center;
+  }
+
+  .thumbnail {
+    display: none;
+  }
+  /* .thumbnail > img{
+        border-radius: 10px;
+        
+    }
+    .post-title{
+        font-family: inherit;
+    } */
+}
+.thumbnail {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: left;
+}
+
+.post-title {
+  font-family: inherit;
+}
+.post-title > a {
+  color: inherit;
+  text-decoration: none;
+}
+.post-title:hover {
+  text-decoration: underline;
+  cursor: default;
+}
